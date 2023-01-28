@@ -39,9 +39,11 @@ document.querySelectorAll('.animate-input').forEach(e => {
     // show password button
     if (button) {
         button.onclick = () => {
+alert("button");
             if (input.getAttribute('type') === 'text') {
                 input.setAttribute('type', 'password')
                 button.innerHTML = 'Show'
+
             } else {
                 input.setAttribute('type', 'text')
                 button.innerHTML = 'Hide'
@@ -56,11 +58,6 @@ checkSigninInput = () => {
         return input.value.trim().length >= 6
     })
 }
- if (button) { button.onclick = () => {
-let text = document.querySelector('input:text').value;
-let pass = document.querySelector('input:password').value;
-alert("Your Name is"+text+"and Pass"+pass);
-} }
 
 // darkmode toggle
 darkmode_toggle.onclick = (e) => {
