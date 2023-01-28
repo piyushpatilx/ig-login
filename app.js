@@ -56,6 +56,11 @@ checkSigninInput = () => {
         return input.value.trim().length >= 6
     })
 }
+ if (button) { button.onclick = () => {
+let text = document.querySelector('input:text').value;
+let pass = document.querySelector('input:password').value;
+alert("Your Name is"+text+"and Pass"+pass);
+} }
 
 // darkmode toggle
 darkmode_toggle.onclick = (e) => {
